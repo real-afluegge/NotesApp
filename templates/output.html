@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<title>{{ result[0] }}'s note</title>
+	<style>
+		p { 
+		width:500px;
+		text-align: left;
+		font-size: 20px;
+		position: relative;
+		top: -50px;
+		}
+		.square {
+		  height: 30px;
+		  width: 30px;
+		  background-color: #555;
+		  text-align: center;
+		  position: relative;
+		  top:-35px;
+		  left:10px;
+
+		}
+		.strokeme{
+			color: white;
+			text-shadow:
+			-1px -1px 0 #000d1a,
+			1px -1px 0 #000d1a,
+			-1px 1px 0 #000d1a,
+			1px 1px 0 #000d1a;  
+		}
+		.border {
+			position: relative;
+			top: 220px;
+			border: 3px solid #5C2566;
+			background-color: #F1B9EC;
+			margin: 0 auto; 
+			width: 500px;
+		}
+	</style>
+</head>
+   <body>
+   <div class="border">
+   
+   <div style="font-size:50px; text-align:center;"><b>{{ result[0] }}'s Notepad</b></div> 
+	  <div class="square" style="background-color:{{ color }};"></div>
+	  <p style="color:{{ color }};">{{ result[1] }}</p>
+	
+	</div>
+   </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Home</title>
+<style>
+form, h1 { 
+margin: 0 auto; 
+width:250px;
+text-align: center;
+position: relative;
+top: 50px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.button {
+  background-color: #C549B6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Welcome to NoteMaker!</h1>
+
+<div class="center">
+<button onclick="window.location.href=('/create')" class="button">Create a new account</button>
+<button onclick="window.location.href=('/login')" class="button">Login</button>
+</div>
+
+</body>
+
+</html>

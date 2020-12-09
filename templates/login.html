@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>Log in</title>
+<style>
+form, h1 { 
+margin: 0 auto; 
+width:250px;
+text-align: center;
+}
+
+.button {
+  background-color: #C549B6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.border {
+	position: relative;
+	top: 220px;
+	border: 3px solid #5C2566;
+	background-color: #F1B9EC;
+	margin: 0 auto; 
+	width: 500px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="border">
+<h1>Login to account</h1>
+
+<form action="/notes" method = "POST"> 
+<label for="loguser">Username:</label> 
+<input type="text" id="loguser" name="loguser" placeholder="your username"> 
+<label for="logpass">Password:</label> 
+<input type="password" id="logpass" name="logpass" placeholder="your password"> 
+
+<button type="submit" class="button">Login</button>
+</form>
+</div>
+</body>
+
+</html>
