@@ -7,7 +7,7 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient("mongodb+srv://sqacey:hiN6xtDfkPZVO746@cluster0.tmmhm.mongodb.net/notes?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://sqacey:password@cluster0.tmmhm.mongodb.net/notes?retryWrites=true&w=majority")
 db = client.test
 
 def encrypt(passw):
